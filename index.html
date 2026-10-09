@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f4">
+  <title>Tic-Tac-Toe — Two players, one board</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar"><a class="brand" href="#" aria-label="Tic-Tac-Toe home"><span class="brand-mark">×○</span> Tic-Tac-Toe</a><span class="pill"><i></i> TWO PLAYER</span></header>
+    <section class="game" aria-labelledby="title">
+      <div class="eyebrow">A LITTLE FRIENDLY COMPETITION</div>
+      <h1 id="title">Your move.</h1>
+      <p class="intro">Take turns, think ahead, and get three in a row.</p>
+      <div class="scoreboard" aria-label="Score">
+        <div class="score-card active" id="score-x"><span class="symbol x">×</span><span class="player-name">Player 1</span><strong id="wins-x">0</strong></div>
+        <div class="score-card" id="score-o"><span class="symbol o">○</span><span class="player-name">Player 2</span><strong id="wins-o">0</strong></div>
+      </div>
+      <div class="status" aria-live="polite"><span class="turn-dot" id="turn-dot"></span><span id="status-text">Player 1's turn</span></div>
+      <div class="board" role="grid" aria-label="Tic-Tac-Toe board" id="board"></div>
+      <div class="actions"><button id="new-game" class="primary">New game <span aria-hidden="true">↻</span></button><button id="reset-score" class="text-button">Reset score</button></div>
+      <p class="footnote">Playing together, right here. <span>♥</span></p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
